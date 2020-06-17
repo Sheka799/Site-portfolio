@@ -33,8 +33,10 @@ img
   text-decoration: none
   text-transform: uppercase
   border: none
+  +bold
   color: $white-color
-  background: linear-gradient(to right, #a21af0, #ff0072)
+  background: linear-gradient( #a21af0, #ff0072)
+  transition: all 0.25s 
   &:hover
     cursor: pointer
     background: linear-gradient(to top right, #a21af0, #ff0072)
@@ -42,6 +44,7 @@ img
 
 #btn-menu
   display: none
+  cursor: pointer
   background: $text-color
   background-clip: content-box
   width: 30px

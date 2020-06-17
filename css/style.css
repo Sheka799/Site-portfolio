@@ -105,9 +105,12 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   border: none;
+  font-family: 'Open Sans Bold', sans-serif;
   color: #ffffff;
-  background: -webkit-gradient(linear, left top, right top, from(#a21af0), to(#ff0072));
-  background: linear-gradient(to right, #a21af0, #ff0072);
+  background: -webkit-gradient(linear, left top, left bottom, from(#a21af0), to(#ff0072));
+  background: linear-gradient(#a21af0, #ff0072);
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .button:hover {
@@ -118,6 +121,7 @@ img {
 
 #btn-menu {
   display: none;
+  cursor: pointer;
   background: #15263e;
   background-clip: content-box;
   width: 30px;
@@ -374,6 +378,39 @@ img {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
+}
+
+.header-title {
+  background: url("../img/header.jpg");
+  background-position: bottom;
+  height: 735px;
+  color: #ffffff;
+  font-family: 'Open Sans Bold', sans-serif;
+  text-align: center;
+}
+
+.header-text {
+  padding-top: 100px;
+}
+
+.header-text__h3 {
+  font-size: 47px;
+}
+
+.header-text__h1 {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a21af0), to(#ff0072));
+  background-image: linear-gradient(#a21af0, #ff0072);
+  font-size: 200px;
+  margin-top: -70px;
+}
+
+.header-text__h2 {
+  margin-top: -50px;
+  font-size: 115px;
+  letter-spacing: 40px;
 }
 
 @media (max-width: 1199px) {

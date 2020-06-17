@@ -1,3 +1,5 @@
+// HEADER NAVIGATION
+
 .header 
   &-nav
     display: flex
@@ -106,6 +108,40 @@
         opacity: 1
         left: 0
         transform: rotate(0deg)
+
+
+
+// HEADER TITLE
+
+.header
+  &-title
+    background: url('../img/header.jpg') 
+    background-position: bottom
+    height: 735px
+    color: $white-color
+    +bold
+    text-align: center
+  &-text
+    padding-top: 100px
+    &__h3
+      font-size: 47px
+    &__h1
+      color: transparent
+      -webkit-background-clip: text
+      background-clip: text
+      background-image: linear-gradient( #a21af0, #ff0072)
+      font-size: 200px
+      margin-top: -70px
+    &__h2
+      margin-top: -50px
+      font-size: 115px
+      letter-spacing: 40px
+    
+    
+      
+ 
+
+// HEADER MEDIA
 
 @media ( max-width: 1199px)
   .header-nav
