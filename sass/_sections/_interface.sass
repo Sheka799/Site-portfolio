@@ -1,0 +1,95 @@
+body
+  font-size: 15px
+  color: $text-color
+  +light
+button, input, textarea, a
+	&:focus
+		outline: none
+a
+	text-decoration: none
+img
+  max-width: 100%
+.section
+  padding: 100px 0
+  &-title
+    font-size: 30px
+    text-align: center
+    +bold
+  &__title
+    margin-bottom: 40px
+  &__description
+    margin-bottom: 70px
+    font-size: 18px
+    text-align: center
+    +regular
+  &-description
+    margin-top: 40px
+    margin-bottom: 40px
+    font-size: 20px
+    text-align: center
+.button
+  padding: 25px 30px
+  font-size: 16px
+  text-decoration: none
+  text-transform: uppercase
+  border: none
+  color: $white-color
+  background: linear-gradient(to right, #a21af0, #ff0072)
+  &:hover
+    cursor: pointer
+    background: linear-gradient(to top right, #a21af0, #ff0072)
+
+
+#btn-menu
+  display: none
+  background: $text-color
+  background-clip: content-box
+  width: 30px
+  height: 24px
+  border-top: 11px solid transparent
+  border-bottom: 11px solid transparent
+  -webkit-transform: rotate(0deg)
+  transform: rotate(0deg)
+  -webkit-transition: all 0.25s ease-in-out
+  transition: all 0.25s ease-in-out
+  &:before,
+  &:after 
+    content: ""
+    position: absolute
+    background: $text-color
+    height: 2px
+    width: 100%
+    right: 0
+    will-change: rotate
+    -webkit-transform: rotate(0deg)
+    transform: rotate(0deg)
+    -webkit-transition: all 0.5s ease
+    transition: all 0.5s ease
+  &:before 
+    top: -10px
+  &:after 
+    bottom: -10px
+  &.active 
+    background: transparent
+    background-clip: content-box
+  &.active:before 
+    -webkit-transform: rotate(135deg)
+    transform: rotate(135deg)
+    top: 0
+    background: $white-color
+    width: 110%
+  &.active:after 
+    bottom: 0
+    -webkit-transform: rotate(-135deg)
+    transform: rotate(-135deg)
+    background: $white-color
+    width: 110%
+
+    
+@media ( max-width: 576px)
+  .button
+    font-size: 10px
+  .section
+    padding: 60px 0
+    &-title
+      font-size: 24px
