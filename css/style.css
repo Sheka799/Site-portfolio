@@ -79,24 +79,28 @@ img {
   font-size: 30px;
   text-align: center;
   font-family: 'Open Sans Bold', sans-serif;
+  color: #15263e;
 }
 
 .section__title {
   margin-bottom: 40px;
 }
 
-.section__description {
-  margin-bottom: 70px;
+.section-description {
   font-size: 18px;
   text-align: center;
   font-family: 'Open Sans Regular', sans-serif;
 }
 
-.section-description {
+.section__description {
   margin-top: 40px;
   margin-bottom: 40px;
-  font-size: 20px;
-  text-align: center;
+}
+
+.section-text {
+  font-size: 15px;
+  line-height: 1.8;
+  font-family: 'Open Sans Regular', sans-serif;
 }
 
 .button {
@@ -558,6 +562,250 @@ img {
     margin: 5px 0;
     -webkit-transition: 0.2s;
     transition: 0.2s;
+  }
+}
+
+.about {
+  padding: 0;
+}
+
+.about-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.about-info {
+  text-align: right;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.about-info__title {
+  text-align: right;
+  font-size: 35px;
+  margin-bottom: 7px;
+}
+
+.about-info__description {
+  text-align: right;
+  color: #a21af0;
+  font-family: 'Open Sans Bold', sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.about-img {
+  height: 597px;
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  background: url("../img/John.jpg") center;
+  height: 597px;
+}
+
+.about-skill {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  margin-left: 30px;
+}
+
+.about-skill__description {
+  padding-top: 10px;
+}
+
+.about-skill__description-text {
+  font-size: 16px;
+  font-family: 'Open Sans Regular', sans-serif;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.about-skill__description-color {
+  height: 10px;
+  width: 285px;
+  background: -webkit-gradient(linear, left top, right top, from(#a21af0), to(#ff0072));
+  background: linear-gradient(to right, #a21af0, #ff0072);
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+.about-skill__description-color:last-child {
+  margin-bottom: 0;
+}
+
+.about-contact {
+  background-color: #dcdcde;
+}
+
+.about-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 80px 0;
+}
+
+.about-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-item__img {
+  position: relative;
+  background-color: #374362;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 25px;
+}
+
+.about-item__img img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.about-item__info-title {
+  font-family: 'Open Sans Bold', sans-serif;
+  margin-bottom: 10px;
+}
+
+.about-item__info-description {
+  font-family: 'Open Sans Regular', sans-serif;
+}
+
+@media (max-width: 1199px) {
+  .about-skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-img {
+    background: url("../img/John-tablet.jpg") center no-repeat;
+    height: 455px;
+  }
+}
+
+@media (max-width: 991px) {
+  .about-skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-info {
+    text-align: right;
+  }
+  .about-info__title {
+    text-align: right;
+    font-size: 22px;
+    margin-bottom: 7px;
+  }
+  .about-info__description {
+    text-align: right;
+    color: #a21af0;
+    font-family: 'Open Sans Bold', sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .about-info__text {
+    font-size: 12px;
+  }
+  .about-img {
+    background: url("../img/John-mobile.jpg") center no-repeat;
+    height: 455px;
+    width: 100%;
+  }
+  .about-skill__description-text {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .about-skill__description-color {
+    width: 230px;
+    margin-bottom: 20px;
+  }
+  .about-skill__description-color:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    margin-top: 20px;
+  }
+  .about-skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about-info {
+    min-width: 350px;
+  }
+  .about-info__title {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 7px;
+  }
+  .about-info__description {
+    text-align: center;
+    color: #a21af0;
+    font-family: 'Open Sans Bold', sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .about-info__text {
+    font-size: 12px;
+    text-align: center;
+  }
+  .about-img {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .about-items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 350px) {
+  .about-info {
+    min-width: 300px;
   }
 }
 /*# sourceMappingURL=style.css.map */
