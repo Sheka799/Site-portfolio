@@ -1,0 +1,84 @@
+.testimonials
+  background: url('../img/testimonials/testimonials.jpg')
+  height: 624px
+  &-title
+    color: $white-color
+    margin-top: 45px
+    margin-bottom: 60px
+  &-blocks
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+  &__block
+    position: relative
+  &-block
+    &__description
+      color: $white-color
+    &__imgLeft
+      position: absolute
+      margin: auto
+      top: 0
+      left: 0
+    &__imgRight
+      position: absolute
+      bottom: 0
+      right: 0
+      margin: auto
+    &__description  
+      +light
+      text-align: right
+      margin: 20px 40px 20px 20px
+      max-width: 400px
+      line-height: 1.8
+  &-person
+    display: flex
+    align-items: center
+    justify-content: center
+    color: $white-color
+    &__img
+      border: 10px solid $white-color
+      border-radius: 50%
+      margin-right: 50px
+    &__description
+      text-align: center
+      &-name
+        +bold
+        font-size: 30px
+        margin-bottom: 7px
+      &-position
+        color: $text-color-purple
+        +bold
+  
+@media ( max-width: 991px)
+  .testimonials
+    &-title
+      margin-top: 35px
+    &__block
+      margin-bottom: 20px
+@media ( max-width: 576px)
+  .testimonials
+    &-title
+      margin-top: 30px
+      margin-bottom: 50px
+    &-person
+      &__description
+        &-name
+          font-size: 20px
+        &-position
+          font-size: 12px
+@media ( max-width: 400px)
+  .testimonials
+    &-title
+      margin-top: 15px
+      margin-bottom: 30px
+    &-person
+      flex-wrap: wrap
+      &__img
+        margin-right: 0
+      &__description
+        flex-basis: 100%
+        margin-top: 15px
+
+    
+
+  
