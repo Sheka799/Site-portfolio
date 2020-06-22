@@ -1,0 +1,86 @@
+.experience
+  background: linear-gradient( to right, #a21af0, #ff0072)
+  color: $white-color
+  padding-bottom: 60px
+  &-title
+    margin-bottom: 20px
+    color: $white-color
+  &-blocks
+    display: flex
+    flex-direction: column
+    margin-top: 70px
+  &-block
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 50px 0
+    &__line
+      background-color: $white-color
+      width: 12px
+      height: 50px
+      margin: 0 35px
+    &__description
+      max-width: 700px
+      &-text
+        line-height: 1.7
+        +light
+        text-align: left
+        &__right
+          text-align: right
+    &__title
+      &-text
+        text-align: left
+        margin-bottom: 10px
+        +bold
+        font-size: 20px
+        &__h3
+          text-align: right
+          margin-bottom: 10px
+        &__p
+          text-align: right
+      h3
+        font-size: 20px
+        +bold
+      p
+        font-size: 18px
+        +bold
+.experience
+    &-width
+      &__none
+        display: block
+      &__block
+        display: none
+
+@media ( max-width: 768px)
+  .experience
+    &-width
+      &__none
+        display: none
+      &__block
+        display: block
+    &-block
+      flex-wrap: wrap
+      &__description
+        max-width: 600px
+        margin-top: 20px
+        &-text
+          text-align: center
+      &__line
+        display: none
+      &__title
+        &-text
+          text-align: center
+          &__h3
+            text-align: center
+          &__p
+            text-align: center
+@media ( max-width: 576px)
+  .experience__text
+    h3
+      font-size: 16px
+    p
+      font-size: 14px
+@media ( max-width: 500px)
+  .experience
+    padding-bottom: 0
+     
