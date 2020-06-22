@@ -1,0 +1,42 @@
+.blog
+  &-title
+    margin-bottom: 20px
+  &-description
+    margin-bottom: 80px
+  &-blocks
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+  &-block
+    text-align: left
+    &__name
+      text-transform: uppercase
+      color: #b4b4b4
+      +bold
+      margin-top: 20px
+      margin-bottom: 10px
+    &__title
+      +bold
+      font-size: 16px
+      margin-bottom: 10px
+      letter-spacing: 1px
+    &__description
+      +regular
+      max-width: 330px
+      line-height: 1.6
+
+@media ( max-width: 1200px)
+  .blog
+    &-blocks
+      flex-wrap: wrap
+      justify-content: center
+      margin: 0 auto
+    &-block
+      width: 100%
+      max-width: 330px
+      margin: 0 17px 50px 17px
+
+@media ( max-width: 576px)
+  .blog
+    &-block
+      margin: 0 0 50px 0
