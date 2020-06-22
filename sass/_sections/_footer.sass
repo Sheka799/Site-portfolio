@@ -1,0 +1,71 @@
+.footer
+  background: url('../img/footer.jpg') 
+  height: 776px
+  padding-top: 80px
+  &-title
+    color: $white-color
+    margin-bottom: 20px
+  &-description
+    margin-bottom: 80px
+  &-block
+    padding: 50px 0
+    color: $white-color
+    background-color: #15263e
+  &-form
+    max-width: 800px
+    text-align: center
+    margin: 0 auto
+    input
+      border: none
+      padding: 5px 15px
+      height: 50px
+      width: 250px
+      margin-bottom: 20px
+      font-size: 16px
+      +regular
+    textarea
+      padding: 10px 15px
+      height: 100px
+      width: 100%
+      font-size: 16px
+      +regular
+  &-input
+    &__name
+      margin-right: 21px
+    &__phone
+      margin-right: 21px
+    &__email
+      margin-right: 0
+  &-button
+    margin-top: 25px
+    margin-bottom: 45px
+
+@media ( max-width: 991px)
+  .footer
+    &-block
+      padding-bottom: 0
+    &-form
+      max-width: 500px
+      input
+        width: 100%
+    &-input
+      &__name
+        margin-right: 0
+      &__phone
+        margin-right: 0
+@media ( max-width: 768px)
+  .footer
+    &-form
+      max-width: 400px
+@media ( max-width: 576px)
+  .footer
+    &-form
+      max-width: 300px
+      input
+        font-size: 14px
+      textarea
+        font-size: 14px
+@media ( max-width: 420px)
+  .footer
+    &-form
+      max-width: 240px
