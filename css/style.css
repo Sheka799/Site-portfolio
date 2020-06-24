@@ -1053,6 +1053,10 @@ img {
 }
 
 @media (max-width: 400px) {
+  .testimonials-block__description {
+    line-height: 1.5;
+    margin: 15px 40px 15px 20px;
+  }
   .testimonials-title {
     margin-top: 15px;
     margin-bottom: 30px;
