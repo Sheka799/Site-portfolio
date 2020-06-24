@@ -1129,7 +1129,7 @@ img {
 @media (max-width: 991px) {
   .portfolio-list {
     margin-right: 0;
-    z-index: 100;
+    z-index: 5;
   }
   .portfolio-gallary {
     margin-left: -100px;
